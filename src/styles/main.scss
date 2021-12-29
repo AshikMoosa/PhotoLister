@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+body {
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+//Utilities
+.container {
+  margin: 0 30px;
+}
+
+//Navbar
+.navbar {
+  display: flex;
+  height: 100px;
+  z-index: 999;
+  background: #003699;
+  margin-bottom: 36px;
+
+  h1 {
+    margin: 0;
+    padding: 0 1em;
+    width: 100%;
+    font-size: 20pt;
+    align-self: center;
+
+    a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+  }
+}
+
+//Photo Grid Style
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+}
+
+//Responsiveness - 3column layout for desktop view
+@media only screen and (min-width: "768px") {
+  .container {
+    margin: 0 120px;
+  }
+  .photo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+  }
+}
