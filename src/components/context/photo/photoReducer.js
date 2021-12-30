@@ -5,7 +5,7 @@ const photoReducer = (state, action) => {
     case GET_PHOTOS:
       return {
         ...state,
-        photos: action.payload,
+        photos: [...state.photos, ...action.payload],
       };
     default:
       return state;

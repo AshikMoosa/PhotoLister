@@ -11,8 +11,10 @@ const PhotoState = (props) => {
   const [state, dispatch] = useReducer(PhotoReducer, initialState);
 
   //Get all photos
-  const getPhotos = () => {
-    fetch("https://jsonplaceholder.typicode.com/photos")
+  const getPhotos = (pageNum) => {
+    fetch(
+      `https://jsonplaceholder.typicode.com/photos?_page=${pageNum}&_limit=10`
+    )
       .then(function (res) {
         return res.json();
       })
