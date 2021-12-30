@@ -68,3 +68,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Extras
+
+This project uses react-lazy-load-image-component(https://www.npmjs.com/package/react-lazy-load-image-component) & react-infinite-scroll-component(https://www.npmjs.com/package/react-infinite-scroll-component).
+
+Lazy load image component helps to optimize the app by loading images only when needed & infinite scroll helps to reduce initial load time by fetching data only when user scrolls to a particular section of page.
+
+
